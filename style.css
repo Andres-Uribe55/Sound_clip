@@ -1,0 +1,150 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y cuerpo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado común */
+header {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Secciones generales */
+main section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de secciones */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Subtítulos (canciones o secciones) */
+article h3 {
+    font-size: 1.1rem;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* Imágenes */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Audio */
+audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Botón para volver al inicio */
+a[href="index.html"] {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a[href="index.html"]:hover {
+    background-color: #218838;
+}
+
+/* Enlaces en la página principal */
+.album-link {
+    display: block;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    article h3 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    figure img {
+        max-width: 100%;
+    }
+}
